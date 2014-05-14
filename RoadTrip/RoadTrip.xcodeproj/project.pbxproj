@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9BEC08A19226FF800C07D1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEC08919226FF800C07D1A /* Foundation.framework */; };
+		B9BEC08C19226FF800C07D1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEC08B19226FF800C07D1A /* CoreGraphics.framework */; };
+		B9BEC08E19226FF800C07D1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEC08D19226FF800C07D1A /* UIKit.framework */; };
+		B9BEC09419226FF800C07D1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC09219226FF800C07D1A /* InfoPlist.strings */; };
+		B9BEC09619226FF800C07D1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEC09519226FF800C07D1A /* main.m */; };
+		B9BEC09A19226FF800C07D1A /* RTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEC09919226FF800C07D1A /* RTAppDelegate.m */; };
+		B9BEC09D19226FF800C07D1A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC09B19226FF800C07D1A /* Main_iPhone.storyboard */; };
+		B9BEC0A019226FF800C07D1A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC09E19226FF800C07D1A /* Main_iPad.storyboard */; };
+		B9BEC0A319226FF800C07D1A /* RTMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEC0A219226FF800C07D1A /* RTMasterViewController.m */; };
+		B9BEC0A619226FF800C07D1A /* RTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEC0A519226FF800C07D1A /* RTDetailViewController.m */; };
+		B9BEC0A819226FF800C07D1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0A719226FF800C07D1A /* Images.xcassets */; };
+		B9BEC0AF19226FF800C07D1A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEC0AE19226FF800C07D1A /* XCTest.framework */; };
+		B9BEC0B019226FF800C07D1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEC08919226FF800C07D1A /* Foundation.framework */; };
+		B9BEC0B119226FF800C07D1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEC08D19226FF800C07D1A /* UIKit.framework */; };
+		B9BEC0B919226FF800C07D1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0B719226FF800C07D1A /* InfoPlist.strings */; };
+		B9BEC0BB19226FF800C07D1A /* RoadTripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEC0BA19226FF800C07D1A /* RoadTripTests.m */; };
+		B9BEC0D81922875700C07D1A /* BurnRubber.aif in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0C51922875700C07D1A /* BurnRubber.aif */; };
+		B9BEC0D91922875700C07D1A /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0C61922875700C07D1A /* Button.png */; };
+		B9BEC0DA1922875700C07D1A /* Button0.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0C71922875700C07D1A /* Button0.png */; };
+		B9BEC0DB1922875700C07D1A /* Button1.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0C81922875700C07D1A /* Button1.png */; };
+		B9BEC0DC1922875700C07D1A /* CarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0C91922875700C07D1A /* CarImage.png */; };
+		B9BEC0DD1922875700C07D1A /* CarRunning.aif in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0CA1922875700C07D1A /* CarRunning.aif */; };
+		B9BEC0DE1922875700C07D1A /* DestinationImage_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0CB1922875700C07D1A /* DestinationImage_iPad.png */; };
+		B9BEC0DF1922875700C07D1A /* DestinationImage_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0CC1922875700C07D1A /* DestinationImage_iPhone.png */; };
+		B9BEC0E01922875700C07D1A /* Destinations.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0CD1922875700C07D1A /* Destinations.plist */; };
+		B9BEC0E11922875700C07D1A /* Lotus114.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0CE1922875700C07D1A /* Lotus114.png */; };
+		B9BEC0E21922875700C07D1A /* Lotus144.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0CF1922875700C07D1A /* Lotus144.png */; };
+		B9BEC0E31922875700C07D1A /* Lotus57.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0D01922875700C07D1A /* Lotus57.png */; };
+		B9BEC0E41922875700C07D1A /* Lotus72.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0D11922875700C07D1A /* Lotus72.png */; };
+		B9BEC0E51922875700C07D1A /* NYCImage_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0D21922875700C07D1A /* NYCImage_iPad.png */; };
+		B9BEC0E61922875700C07D1A /* NYCImage_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0D31922875700C07D1A /* NYCImage_iPhone.png */; };
+		B9BEC0E71922875700C07D1A /* SeeTheUSA_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0D41922875700C07D1A /* SeeTheUSA_iPad.png */; };
+		B9BEC0E81922875700C07D1A /* SeeTheUSA_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0D51922875700C07D1A /* SeeTheUSA_iPhone.png */; };
+		B9BEC0E91922875700C07D1A /* SFImage_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0D61922875700C07D1A /* SFImage_iPad.png */; };
+		B9BEC0EA1922875700C07D1A /* SFImage_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BEC0D71922875700C07D1A /* SFImage_iPhone.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9BEC0B219226FF800C07D1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9BEC07E19226FF800C07D1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9BEC08519226FF800C07D1A;
+			remoteInfo = RoadTrip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B9BEC08619226FF800C07D1A /* RoadTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BEC08919226FF800C07D1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9BEC08B19226FF800C07D1A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B9BEC08D19226FF800C07D1A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9BEC09119226FF800C07D1A /* RoadTrip-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoadTrip-Info.plist"; sourceTree = "<group>"; };
+		B9BEC09319226FF800C07D1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9BEC09519226FF800C07D1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9BEC09719226FF800C07D1A /* RoadTrip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoadTrip-Prefix.pch"; sourceTree = "<group>"; };
+		B9BEC09819226FF800C07D1A /* RTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTAppDelegate.h; sourceTree = "<group>"; };
+		B9BEC09919226FF800C07D1A /* RTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTAppDelegate.m; sourceTree = "<group>"; };
+		B9BEC09C19226FF800C07D1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B9BEC09F19226FF800C07D1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B9BEC0A119226FF800C07D1A /* RTMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTMasterViewController.h; sourceTree = "<group>"; };
+		B9BEC0A219226FF800C07D1A /* RTMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTMasterViewController.m; sourceTree = "<group>"; };
+		B9BEC0A419226FF800C07D1A /* RTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTDetailViewController.h; sourceTree = "<group>"; };
+		B9BEC0A519226FF800C07D1A /* RTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTDetailViewController.m; sourceTree = "<group>"; };
+		B9BEC0A719226FF800C07D1A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B9BEC0AD19226FF800C07D1A /* RoadTripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadTripTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BEC0AE19226FF800C07D1A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B9BEC0B619226FF800C07D1A /* RoadTripTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoadTripTests-Info.plist"; sourceTree = "<group>"; };
+		B9BEC0B819226FF800C07D1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9BEC0BA19226FF800C07D1A /* RoadTripTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadTripTests.m; sourceTree = "<group>"; };
+		B9BEC0C51922875700C07D1A /* BurnRubber.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = BurnRubber.aif; sourceTree = "<group>"; };
+		B9BEC0C61922875700C07D1A /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		B9BEC0C71922875700C07D1A /* Button0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button0.png; sourceTree = "<group>"; };
+		B9BEC0C81922875700C07D1A /* Button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button1.png; sourceTree = "<group>"; };
+		B9BEC0C91922875700C07D1A /* CarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CarImage.png; sourceTree = "<group>"; };
+		B9BEC0CA1922875700C07D1A /* CarRunning.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarRunning.aif; sourceTree = "<group>"; };
+		B9BEC0CB1922875700C07D1A /* DestinationImage_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DestinationImage_iPad.png; sourceTree = "<group>"; };
+		B9BEC0CC1922875700C07D1A /* DestinationImage_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DestinationImage_iPhone.png; sourceTree = "<group>"; };
+		B9BEC0CD1922875700C07D1A /* Destinations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Destinations.plist; sourceTree = "<group>"; };
+		B9BEC0CE1922875700C07D1A /* Lotus114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lotus114.png; sourceTree = "<group>"; };
+		B9BEC0CF1922875700C07D1A /* Lotus144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lotus144.png; sourceTree = "<group>"; };
+		B9BEC0D01922875700C07D1A /* Lotus57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lotus57.png; sourceTree = "<group>"; };
+		B9BEC0D11922875700C07D1A /* Lotus72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lotus72.png; sourceTree = "<group>"; };
+		B9BEC0D21922875700C07D1A /* NYCImage_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NYCImage_iPad.png; sourceTree = "<group>"; };
+		B9BEC0D31922875700C07D1A /* NYCImage_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NYCImage_iPhone.png; sourceTree = "<group>"; };
+		B9BEC0D41922875700C07D1A /* SeeTheUSA_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SeeTheUSA_iPad.png; sourceTree = "<group>"; };
+		B9BEC0D51922875700C07D1A /* SeeTheUSA_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SeeTheUSA_iPhone.png; sourceTree = "<group>"; };
+		B9BEC0D61922875700C07D1A /* SFImage_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SFImage_iPad.png; sourceTree = "<group>"; };
+		B9BEC0D71922875700C07D1A /* SFImage_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SFImage_iPhone.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9BEC08319226FF800C07D1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BEC08C19226FF800C07D1A /* CoreGraphics.framework in Frameworks */,
+				B9BEC08E19226FF800C07D1A /* UIKit.framework in Frameworks */,
+				B9BEC08A19226FF800C07D1A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BEC0AA19226FF800C07D1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BEC0AF19226FF800C07D1A /* XCTest.framework in Frameworks */,
+				B9BEC0B119226FF800C07D1A /* UIKit.framework in Frameworks */,
+				B9BEC0B019226FF800C07D1A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9BEC07D19226FF800C07D1A = {
+			isa = PBXGroup;
+			children = (
+				B9BEC08F19226FF800C07D1A /* RoadTrip */,
+				B9BEC0B419226FF800C07D1A /* RoadTripTests */,
+				B9BEC08819226FF800C07D1A /* Frameworks */,
+				B9BEC08719226FF800C07D1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9BEC08719226FF800C07D1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEC08619226FF800C07D1A /* RoadTrip.app */,
+				B9BEC0AD19226FF800C07D1A /* RoadTripTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9BEC08819226FF800C07D1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEC08919226FF800C07D1A /* Foundation.framework */,
+				B9BEC08B19226FF800C07D1A /* CoreGraphics.framework */,
+				B9BEC08D19226FF800C07D1A /* UIKit.framework */,
+				B9BEC0AE19226FF800C07D1A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9BEC08F19226FF800C07D1A /* RoadTrip */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEC0C41922875700C07D1A /* RoadTrip Resources */,
+				B9BEC09819226FF800C07D1A /* RTAppDelegate.h */,
+				B9BEC09919226FF800C07D1A /* RTAppDelegate.m */,
+				B9BEC09B19226FF800C07D1A /* Main_iPhone.storyboard */,
+				B9BEC09E19226FF800C07D1A /* Main_iPad.storyboard */,
+				B9BEC0A119226FF800C07D1A /* RTMasterViewController.h */,
+				B9BEC0A219226FF800C07D1A /* RTMasterViewController.m */,
+				B9BEC0A419226FF800C07D1A /* RTDetailViewController.h */,
+				B9BEC0A519226FF800C07D1A /* RTDetailViewController.m */,
+				B9BEC0A719226FF800C07D1A /* Images.xcassets */,
+				B9BEC09019226FF800C07D1A /* Supporting Files */,
+			);
+			path = RoadTrip;
+			sourceTree = "<group>";
+		};
+		B9BEC09019226FF800C07D1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEC09119226FF800C07D1A /* RoadTrip-Info.plist */,
+				B9BEC09219226FF800C07D1A /* InfoPlist.strings */,
+				B9BEC09519226FF800C07D1A /* main.m */,
+				B9BEC09719226FF800C07D1A /* RoadTrip-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9BEC0B419226FF800C07D1A /* RoadTripTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEC0BA19226FF800C07D1A /* RoadTripTests.m */,
+				B9BEC0B519226FF800C07D1A /* Supporting Files */,
+			);
+			path = RoadTripTests;
+			sourceTree = "<group>";
+		};
+		B9BEC0B519226FF800C07D1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEC0B619226FF800C07D1A /* RoadTripTests-Info.plist */,
+				B9BEC0B719226FF800C07D1A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9BEC0C41922875700C07D1A /* RoadTrip Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEC0C51922875700C07D1A /* BurnRubber.aif */,
+				B9BEC0C61922875700C07D1A /* Button.png */,
+				B9BEC0C71922875700C07D1A /* Button0.png */,
+				B9BEC0C81922875700C07D1A /* Button1.png */,
+				B9BEC0C91922875700C07D1A /* CarImage.png */,
+				B9BEC0CA1922875700C07D1A /* CarRunning.aif */,
+				B9BEC0CB1922875700C07D1A /* DestinationImage_iPad.png */,
+				B9BEC0CC1922875700C07D1A /* DestinationImage_iPhone.png */,
+				B9BEC0CD1922875700C07D1A /* Destinations.plist */,
+				B9BEC0CE1922875700C07D1A /* Lotus114.png */,
+				B9BEC0CF1922875700C07D1A /* Lotus144.png */,
+				B9BEC0D01922875700C07D1A /* Lotus57.png */,
+				B9BEC0D11922875700C07D1A /* Lotus72.png */,
+				B9BEC0D21922875700C07D1A /* NYCImage_iPad.png */,
+				B9BEC0D31922875700C07D1A /* NYCImage_iPhone.png */,
+				B9BEC0D41922875700C07D1A /* SeeTheUSA_iPad.png */,
+				B9BEC0D51922875700C07D1A /* SeeTheUSA_iPhone.png */,
+				B9BEC0D61922875700C07D1A /* SFImage_iPad.png */,
+				B9BEC0D71922875700C07D1A /* SFImage_iPhone.png */,
+			);
+			path = "RoadTrip Resources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9BEC08519226FF800C07D1A /* RoadTrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9BEC0BE19226FF800C07D1A /* Build configuration list for PBXNativeTarget "RoadTrip" */;
+			buildPhases = (
+				B9BEC08219226FF800C07D1A /* Sources */,
+				B9BEC08319226FF800C07D1A /* Frameworks */,
+				B9BEC08419226FF800C07D1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoadTrip;
+			productName = RoadTrip;
+			productReference = B9BEC08619226FF800C07D1A /* RoadTrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9BEC0AC19226FF800C07D1A /* RoadTripTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9BEC0C119226FF800C07D1A /* Build configuration list for PBXNativeTarget "RoadTripTests" */;
+			buildPhases = (
+				B9BEC0A919226FF800C07D1A /* Sources */,
+				B9BEC0AA19226FF800C07D1A /* Frameworks */,
+				B9BEC0AB19226FF800C07D1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9BEC0B319226FF800C07D1A /* PBXTargetDependency */,
+			);
+			name = RoadTripTests;
+			productName = RoadTripTests;
+			productReference = B9BEC0AD19226FF800C07D1A /* RoadTripTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9BEC07E19226FF800C07D1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Byteridge;
+				TargetAttributes = {
+					B9BEC0AC19226FF800C07D1A = {
+						TestTargetID = B9BEC08519226FF800C07D1A;
+					};
+				};
+			};
+			buildConfigurationList = B9BEC08119226FF800C07D1A /* Build configuration list for PBXProject "RoadTrip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9BEC07D19226FF800C07D1A;
+			productRefGroup = B9BEC08719226FF800C07D1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9BEC08519226FF800C07D1A /* RoadTrip */,
+				B9BEC0AC19226FF800C07D1A /* RoadTripTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9BEC08419226FF800C07D1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BEC0E51922875700C07D1A /* NYCImage_iPad.png in Resources */,
+				B9BEC0E81922875700C07D1A /* SeeTheUSA_iPhone.png in Resources */,
+				B9BEC0D81922875700C07D1A /* BurnRubber.aif in Resources */,
+				B9BEC0E31922875700C07D1A /* Lotus57.png in Resources */,
+				B9BEC0A019226FF800C07D1A /* Main_iPad.storyboard in Resources */,
+				B9BEC0EA1922875700C07D1A /* SFImage_iPhone.png in Resources */,
+				B9BEC0E11922875700C07D1A /* Lotus114.png in Resources */,
+				B9BEC0E61922875700C07D1A /* NYCImage_iPhone.png in Resources */,
+				B9BEC0DC1922875700C07D1A /* CarImage.png in Resources */,
+				B9BEC0DE1922875700C07D1A /* DestinationImage_iPad.png in Resources */,
+				B9BEC0E21922875700C07D1A /* Lotus144.png in Resources */,
+				B9BEC0E01922875700C07D1A /* Destinations.plist in Resources */,
+				B9BEC0DA1922875700C07D1A /* Button0.png in Resources */,
+				B9BEC0DB1922875700C07D1A /* Button1.png in Resources */,
+				B9BEC0E41922875700C07D1A /* Lotus72.png in Resources */,
+				B9BEC0A819226FF800C07D1A /* Images.xcassets in Resources */,
+				B9BEC09D19226FF800C07D1A /* Main_iPhone.storyboard in Resources */,
+				B9BEC0DD1922875700C07D1A /* CarRunning.aif in Resources */,
+				B9BEC0DF1922875700C07D1A /* DestinationImage_iPhone.png in Resources */,
+				B9BEC0E71922875700C07D1A /* SeeTheUSA_iPad.png in Resources */,
+				B9BEC09419226FF800C07D1A /* InfoPlist.strings in Resources */,
+				B9BEC0E91922875700C07D1A /* SFImage_iPad.png in Resources */,
+				B9BEC0D91922875700C07D1A /* Button.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BEC0AB19226FF800C07D1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BEC0B919226FF800C07D1A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9BEC08219226FF800C07D1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BEC09A19226FF800C07D1A /* RTAppDelegate.m in Sources */,
+				B9BEC0A319226FF800C07D1A /* RTMasterViewController.m in Sources */,
+				B9BEC09619226FF800C07D1A /* main.m in Sources */,
+				B9BEC0A619226FF800C07D1A /* RTDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BEC0A919226FF800C07D1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BEC0BB19226FF800C07D1A /* RoadTripTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9BEC0B319226FF800C07D1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9BEC08519226FF800C07D1A /* RoadTrip */;
+			targetProxy = B9BEC0B219226FF800C07D1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9BEC09219226FF800C07D1A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9BEC09319226FF800C07D1A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B9BEC09B19226FF800C07D1A /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9BEC09C19226FF800C07D1A /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B9BEC09E19226FF800C07D1A /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9BEC09F19226FF800C07D1A /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		B9BEC0B719226FF800C07D1A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9BEC0B819226FF800C07D1A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9BEC0BC19226FF800C07D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9BEC0BD19226FF800C07D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9BEC0BF19226FF800C07D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoadTrip/RoadTrip-Prefix.pch";
+				INFOPLIST_FILE = "RoadTrip/RoadTrip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B9BEC0C019226FF800C07D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoadTrip/RoadTrip-Prefix.pch";
+				INFOPLIST_FILE = "RoadTrip/RoadTrip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B9BEC0C219226FF800C07D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RoadTrip.app/RoadTrip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoadTrip/RoadTrip-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RoadTripTests/RoadTripTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B9BEC0C319226FF800C07D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RoadTrip.app/RoadTrip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoadTrip/RoadTrip-Prefix.pch";
+				INFOPLIST_FILE = "RoadTripTests/RoadTripTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9BEC08119226FF800C07D1A /* Build configuration list for PBXProject "RoadTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BEC0BC19226FF800C07D1A /* Debug */,
+				B9BEC0BD19226FF800C07D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9BEC0BE19226FF800C07D1A /* Build configuration list for PBXNativeTarget "RoadTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BEC0BF19226FF800C07D1A /* Debug */,
+				B9BEC0C019226FF800C07D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B9BEC0C119226FF800C07D1A /* Build configuration list for PBXNativeTarget "RoadTripTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BEC0C219226FF800C07D1A /* Debug */,
+				B9BEC0C319226FF800C07D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9BEC07E19226FF800C07D1A /* Project object */;
+}
